@@ -8,3 +8,6 @@
     TECHNOLOGIES USED: 
     
         HTML, CSS, REACTJS
+
+    // 'Bundle folder' is for Production
+    // 'Whole Code' folder is for development
