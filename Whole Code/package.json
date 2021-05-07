@@ -1,4 +1,4 @@
-{
+/*{
   "name": "Rev",
   "version": "1.0.0",
   "description": "",
@@ -55,3 +55,4 @@
     "babel-webpack-plugin": "^0.1.1"
   }
 }
+*/
