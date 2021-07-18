@@ -1,0 +1,216 @@
+*
+{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+}
+
+.container
+{
+   max-width: 95%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   transition:0.5s;
+}
+
+header
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height:100px;
+   transition:0.5s;
+}
+
+header .header h1
+{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-style: italic;
+   font-weight: bolder;
+   font-size: 35px;
+   background: linear-gradient(rgb(218, 218, 218),rgb(0, 0, 0),rgb(221, 221, 221));
+   -webkit-background-clip:text;
+   -webkit-text-fill-color: transparent;
+   transition:0.5s;
+}
+
+.greeting
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width:100%;
+   height:70px;
+   transition:0.5s;
+}
+
+h2.dayGreeting
+{
+   font-size: 32px;
+   font-weight: bolder;
+   font-style: italic;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   background: linear-gradient(rgb(0, 247, 255),#000000,rgb(0, 225, 255));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition:0.5s;
+}
+
+.clock-contents
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   height:200px;
+   width:100%;
+   max-width:400px;
+   min-width:300px;
+   text-align: center;
+   transition:0.5s;
+}
+
+.hour, .second, .minute, .millisecond
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border:3px solid rgb(255, 255, 255);
+   box-shadow: 0 0 15px 0 rgb(161, 161, 161);
+   width:100vw;
+   height:70px;
+   text-align: center;
+   font-size: 30px;
+   font-weight: bolder;
+   font-stretch: extra-condensed;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   transition:0.5s;
+}
+
+.second, .minute, .millisecond
+{
+   border-left:none;
+   transition:0.5s;
+}
+
+.hour, .minute, .second
+{
+   border-right: 3px dotted rgb(255, 255, 255);
+   transition:0.5s;
+}
+
+.total-days-done
+{
+   width:100%;
+   height:170px;
+   transition:0.5s;
+}
+
+.total-days-done h2
+{
+   font-size: 18px;
+   line-height: 35px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   transition:0.5s;
+}
+
+.date-def
+{
+   font-weight: lighter;
+   transition:0.5s;
+}
+
+footer
+{
+   margin-top:20px;
+   font-family: 'Arial Narrow Bold', sans-serif;
+   font-weight: lighter;
+   font-style:italic;
+   font-size: 13px;
+   color:rgb(153, 153, 153);
+}
+
+@media only screen and (max-width:372px)
+{
+   .clock-contents
+   {
+      margin-left: -50px;
+   }
+
+}
+
+@media only screen and (max-width:400px)
+{
+   header .header h1
+   {
+      margin-left:-50px;
+      font-size:33px;
+   }
+   
+   h2.dayGreeting
+   {
+      margin-left:-50px;
+      font-size: 30px;
+   }
+
+   .clock-contents
+   {
+      width:100%;
+   }
+
+   .hour, .second, .minute, .millisecond
+   {
+      margin: auto;
+      width:15vw;
+      height:60px;
+      font-size: 20px;
+   }
+
+   .total-days-done h2
+   {
+      font-size: 14px;
+   }
+
+   footer
+   {
+      margin-left:-50px;
+      font-size: 13px;
+      color:rgb(153, 153, 153);
+   }
+}
+
+@media only screen and (max-width:470px)
+{
+   header .header h1
+   {
+      font-size:33px;
+   }
+   
+   h2.dayGreeting
+   {
+      font-size: 30px;
+   }
+
+   .hour, .second, .minute, .millisecond
+   {
+      margin: auto;
+      width:20vw;
+      height:60px;
+      font-size: 20px;
+   }
+
+   .total-days-done h2
+   {
+      font-size: 14px;
+   }
+
+   footer
+   {
+      font-size: 13px;
+      color:rgb(153, 153, 153);
+   }
+}
